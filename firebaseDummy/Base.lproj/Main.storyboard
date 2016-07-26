@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ey-QO-Hhc">
+                                <rect key="frame" x="247" y="132" width="107" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="107" id="j9M-fo-0K7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1MX-cT-pIC">
+                                <rect key="frame" x="40" y="322" width="68" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="68" id="Jda-22-Pdn"/>
+                                </constraints>
+                                <state key="normal" title="Sunny"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0FE-pe-6I1">
+                                <rect key="frame" x="465" y="322" width="90" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="ych-cG-JCj"/>
+                                </constraints>
+                                <state key="normal" title="Foggy"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0FE-pe-6I1" firstAttribute="baseline" secondItem="1MX-cT-pIC" secondAttribute="firstBaseline" id="7DH-dD-ZHy"/>
+                            <constraint firstItem="1MX-cT-pIC" firstAttribute="baseline" secondItem="0FE-pe-6I1" secondAttribute="firstBaseline" id="9k9-A7-r79"/>
+                            <constraint firstItem="9ey-QO-Hhc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="112" id="Q2m-a0-t7y"/>
+                            <constraint firstItem="1MX-cT-pIC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="302" id="Z3A-hq-tzU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0FE-pe-6I1" secondAttribute="trailing" constant="25" id="ZsX-IU-tBZ"/>
+                            <constraint firstItem="1MX-cT-pIC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="Zt9-Pq-38Z"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="1MX-cT-pIC" secondAttribute="bottom" constant="228" id="cd5-hE-05X"/>
+                            <constraint firstItem="9ey-QO-Hhc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fAB-eU-qlI"/>
+                            <constraint firstItem="1MX-cT-pIC" firstAttribute="top" secondItem="0FE-pe-6I1" secondAttribute="top" id="tzT-dm-fPC"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="9ey-QO-Hhc" secondAttribute="bottom" constant="404" id="vFi-e7-wpW"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="411" y="408"/>
+        </scene>
+    </scenes>
+</document>
